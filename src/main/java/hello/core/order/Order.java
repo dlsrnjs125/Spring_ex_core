@@ -50,7 +50,7 @@ public class Order {
         this.discountPrice = discountPrice;
     }
 
-    @Override
+    @Override  // commend + n -> toString
     public String toString() {
         return "Order{" +
                 "memberId=" + memberId +
@@ -59,4 +59,6 @@ public class Order {
                 ", discountPrice=" + discountPrice +
                 '}';
     }
+
+
 }
