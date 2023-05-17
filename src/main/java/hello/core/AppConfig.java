@@ -16,15 +16,18 @@ public class AppConfig {
 
     @Bean
     public MemberService memberService() {
+
         return new MemberServiceImpl(memberRepository());
     }
     // commend + option + m -> 리팩터링
     @Bean
     public MemoryMemberRepository memberRepository() {
+
         return new MemoryMemberRepository();
     }
     @Bean
     public OrderService orderService() {
+
         return new OrderServiceImpl(memberRepository(), discountPolicy());
     }
     @Bean
